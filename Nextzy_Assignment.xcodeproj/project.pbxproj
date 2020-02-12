@@ -13,6 +13,7 @@
 		0C8C9E3D23F435F500FBCD4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8C9E3B23F435F500FBCD4B /* Main.storyboard */; };
 		0C8C9E3F23F435F600FBCD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8C9E3E23F435F600FBCD4B /* Assets.xcassets */; };
 		0C8C9E4223F435F600FBCD4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8C9E4023F435F600FBCD4B /* LaunchScreen.storyboard */; };
+		658BFAE58A0B4E29356271F3 /* Pods_Nextzy_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A795E89931E03F72A89BFE /* Pods_Nextzy_Assignment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		0C8C9E3E23F435F600FBCD4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C8C9E4123F435F600FBCD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C8C9E4323F435F600FBCD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C714197F5494EE6FB782D4D /* Pods-Nextzy_Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nextzy_Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Nextzy_Assignment/Pods-Nextzy_Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		64A795E89931E03F72A89BFE /* Pods_Nextzy_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nextzy_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC888C18802792BBD24F6F58 /* Pods-Nextzy_Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nextzy_Assignment.release.xcconfig"; path = "Target Support Files/Pods-Nextzy_Assignment/Pods-Nextzy_Assignment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658BFAE58A0B4E29356271F3 /* Pods_Nextzy_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0C8C9E3423F435F500FBCD4B /* Nextzy_Assignment */,
 				0C8C9E3323F435F500FBCD4B /* Products */,
+				C891416BB971E7F33D0187D5 /* Pods */,
+				2E4D11D0C14A78EC06AD13BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Nextzy_Assignment;
 			sourceTree = "<group>";
 		};
+		2E4D11D0C14A78EC06AD13BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64A795E89931E03F72A89BFE /* Pods_Nextzy_Assignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C891416BB971E7F33D0187D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C714197F5494EE6FB782D4D /* Pods-Nextzy_Assignment.debug.xcconfig */,
+				FC888C18802792BBD24F6F58 /* Pods-Nextzy_Assignment.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C8C9E4623F435F600FBCD4B /* Build configuration list for PBXNativeTarget "Nextzy_Assignment" */;
 			buildPhases = (
+				7B7EC86E3C1C2816B697435F /* [CP] Check Pods Manifest.lock */,
 				0C8C9E2E23F435F500FBCD4B /* Sources */,
 				0C8C9E2F23F435F500FBCD4B /* Frameworks */,
 				0C8C9E3023F435F500FBCD4B /* Resources */,
+				EED579AFE2DCE0624A8DA9F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B7EC86E3C1C2816B697435F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nextzy_Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EED579AFE2DCE0624A8DA9F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nextzy_Assignment/Pods-Nextzy_Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nextzy_Assignment/Pods-Nextzy_Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nextzy_Assignment/Pods-Nextzy_Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C8C9E2E23F435F500FBCD4B /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		0C8C9E4723F435F600FBCD4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C714197F5494EE6FB782D4D /* Pods-Nextzy_Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		0C8C9E4823F435F600FBCD4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC888C18802792BBD24F6F58 /* Pods-Nextzy_Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
