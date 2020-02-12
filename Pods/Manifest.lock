@@ -3,24 +3,28 @@ PODS:
   - Kingfisher (5.13.0):
     - Kingfisher/Core (= 5.13.0)
   - Kingfisher/Core (5.13.0)
+  - LoadingPlaceholderView (0.0.2)
   - RxSwift (5.0.1)
 
 DEPENDENCIES:
   - Alamofire (= 5.0.0-rc.3)
   - Kingfisher (~> 5.13)
+  - LoadingPlaceholderView (~> 0.0)
   - RxSwift (~> 5.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Kingfisher
+    - LoadingPlaceholderView
     - RxSwift
 
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
   Kingfisher: 0d334cada987fcddbe9b5cec516406e1ee9d4748
+  LoadingPlaceholderView: e913f5ae2673612d405ce395acca7cedb1bfaa81
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
-PODFILE CHECKSUM: 85ed037a14eaca43fb723b61dedd8014942b14db
+PODFILE CHECKSUM: a849cd9bf97658ca40281ddf9cd66670a729d5ce
 
 COCOAPODS: 1.8.4

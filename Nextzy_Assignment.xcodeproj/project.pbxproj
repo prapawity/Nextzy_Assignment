@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -63,6 +63,9 @@
 		0C8C9E3423F435F500FBCD4B /* Nextzy_Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				0C8C9E4B23F4417300FBCD4B /* ViewModels */,
+				0C8C9E4A23F4416900FBCD4B /* Views */,
+				0C8C9E4923F4415600FBCD4B /* Models */,
 				0C8C9E3523F435F500FBCD4B /* AppDelegate.swift */,
 				0C8C9E3723F435F500FBCD4B /* SceneDelegate.swift */,
 				0C8C9E3923F435F500FBCD4B /* ViewController.swift */,
@@ -72,6 +75,27 @@
 				0C8C9E4323F435F600FBCD4B /* Info.plist */,
 			);
 			path = Nextzy_Assignment;
+			sourceTree = "<group>";
+		};
+		0C8C9E4923F4415600FBCD4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0C8C9E4A23F4416900FBCD4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0C8C9E4B23F4417300FBCD4B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		2E4D11D0C14A78EC06AD13BD /* Frameworks */ = {
@@ -88,7 +112,6 @@
 				2C714197F5494EE6FB782D4D /* Pods-Nextzy_Assignment.debug.xcconfig */,
 				FC888C18802792BBD24F6F58 /* Pods-Nextzy_Assignment.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

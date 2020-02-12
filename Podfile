@@ -9,5 +9,6 @@ target 'Nextzy_Assignment' do
   pod 'Alamofire', '5.0.0-rc.3'
   pod 'Kingfisher', '~> 5.13'
   pod 'RxSwift', '~> 5.0'
+  pod 'LoadingPlaceholderView', '~> 0.0'
 
 end
