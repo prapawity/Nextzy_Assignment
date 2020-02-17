@@ -19,28 +19,23 @@ class ListPokemonViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableViewSetup()
-        testCall()
-        //        collectionViewSetup()
-        // Do any additional setup after loading the view.
     }
     
     private func tableViewSetup(){
         showListPokemonTableView.delegate = self
         showListPokemonTableView.dataSource = self
         showListPokemonTableView.register(UINib(nibName: "ShowPokemonTableViewCell", bundle: nil), forCellReuseIdentifier: "pokemonCell")
+        initCall()
     }
     
-    func testCall(){
+    func initCall(){
         var indexChk = 0
         self.viewModel.callAPIResult { (ApiCallerObj) in
             for pokeIndex in ApiCallerObj.results!{
                 self.viewModel.callApi(url: pokeIndex.url!) { (PokemonModel) in
                     indexChk += 1
                     self.viewModel.appendDatatoList(pokemon: PokemonModel)
-                    
-                    
                     if indexChk == 50{
                         for i in 0 ... 49{
                             self.viewModel.appendShowList(pokemon: self.viewModel.getDataList()[i])
@@ -75,7 +70,6 @@ extension ListPokemonViewController: UISearchBarDelegate,UITableViewDelegate, UI
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch Section(rawValue: section)! {
         case .pokemonList:
-            print(self.viewModel.getShowList().count)
             return self.viewModel.getShowList().count
         case .loadMore:
             return isLoadmore ? 1 : 0
