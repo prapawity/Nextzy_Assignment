@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pokemonCell" rowHeight="250" id="KGk-i7-Jjw" customClass="ShowPokemonTableViewCell" customModule="Nextzy_Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="502" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="502" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIX-F4-zff">
+                        <rect key="frame" x="10" y="10" width="482" height="230"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cLl-Ql-9bW">
+                                <rect key="frame" x="10" y="10" width="462" height="210"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemon-go-logo" translatesAutoresizingMaskIntoConstraints="NO" id="nLp-dO-1yc">
+                                        <rect key="frame" x="0.0" y="0.0" width="221" height="210"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nLp-dO-1yc" secondAttribute="height" multiplier="20:19" id="YZD-Bp-ncg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4r-Wj-KTS">
+                                        <rect key="frame" x="231" y="0.0" width="231" height="210"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9749777463" green="0.88824596030000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="cLl-Ql-9bW" firstAttribute="leading" secondItem="DIX-F4-zff" secondAttribute="leading" constant="10" id="J3f-85-VN2"/>
+                            <constraint firstItem="cLl-Ql-9bW" firstAttribute="top" secondItem="DIX-F4-zff" secondAttribute="top" constant="10" id="UiO-0k-gFE"/>
+                            <constraint firstAttribute="trailing" secondItem="cLl-Ql-9bW" secondAttribute="trailing" constant="10" id="fxM-mg-SOv"/>
+                            <constraint firstAttribute="bottom" secondItem="cLl-Ql-9bW" secondAttribute="bottom" constant="10" id="ogK-RR-62n"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="DIX-F4-zff" secondAttribute="bottom" constant="10" id="72h-jA-lU2"/>
+                    <constraint firstAttribute="trailing" secondItem="DIX-F4-zff" secondAttribute="trailing" constant="10" id="75p-eb-3rX"/>
+                    <constraint firstItem="DIX-F4-zff" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="czA-Ou-uxV"/>
+                    <constraint firstItem="DIX-F4-zff" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="nFk-bg-TQh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img" destination="nLp-dO-1yc" id="iJ7-mB-6oq"/>
+                <outlet property="name" destination="R4r-Wj-KTS" id="O0Z-AB-a2E"/>
+                <outlet property="showUIView" destination="DIX-F4-zff" id="iGn-Uy-KW6"/>
+            </connections>
+            <point key="canvasLocation" x="269.56521739130437" y="201.5625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pokemon-go-logo" width="300" height="183"/>
+    </resources>
+</document>

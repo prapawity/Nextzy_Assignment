@@ -3,27 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0C8C9E3623F435F500FBCD4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C9E3523F435F500FBCD4B /* AppDelegate.swift */; };
 		0C8C9E3823F435F500FBCD4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C9E3723F435F500FBCD4B /* SceneDelegate.swift */; };
-		0C8C9E3A23F435F500FBCD4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C9E3923F435F500FBCD4B /* ViewController.swift */; };
 		0C8C9E3D23F435F500FBCD4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8C9E3B23F435F500FBCD4B /* Main.storyboard */; };
 		0C8C9E3F23F435F600FBCD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8C9E3E23F435F600FBCD4B /* Assets.xcassets */; };
 		0C8C9E4223F435F600FBCD4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8C9E4023F435F600FBCD4B /* LaunchScreen.storyboard */; };
+		0C8C9E5823F7A16F00FBCD4B /* ListPokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C9E5723F7A16F00FBCD4B /* ListPokemonViewController.swift */; };
+		0C8C9E5A23F7A3CA00FBCD4B /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C9E5923F7A3CA00FBCD4B /* PokemonModel.swift */; };
+		0C8C9E5E23F7BE1300FBCD4B /* ShowListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C9E5D23F7BE1300FBCD4B /* ShowListViewModel.swift */; };
+		0C8C9E6023F7BE4E00FBCD4B /* DataBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C9E5F23F7BE4E00FBCD4B /* DataBinding.swift */; };
+		0CB6EF6823FAC4DC00E141EC /* ShowPokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB6EF6623FAC4DC00E141EC /* ShowPokemonTableViewCell.swift */; };
+		0CB6EF6923FAC4DC00E141EC /* ShowPokemonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB6EF6723FAC4DC00E141EC /* ShowPokemonTableViewCell.xib */; };
+		0CB6EF6B23FAEA7300E141EC /* ShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB6EF6A23FAEA7300E141EC /* ShowDetailViewController.swift */; };
+		0CB6EF6D23FAEE1600E141EC /* ShowDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB6EF6C23FAEE1600E141EC /* ShowDetailViewModel.swift */; };
+		658BFAE58A0B4E29356271F3 /* Pods_Nextzy_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A795E89931E03F72A89BFE /* Pods_Nextzy_Assignment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C8C9E3223F435F500FBCD4B /* Nextzy_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nextzy_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C8C9E3523F435F500FBCD4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C8C9E3723F435F500FBCD4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0C8C9E3923F435F500FBCD4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C8C9E3C23F435F500FBCD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C8C9E3E23F435F600FBCD4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C8C9E4123F435F600FBCD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C8C9E4323F435F600FBCD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C8C9E5723F7A16F00FBCD4B /* ListPokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPokemonViewController.swift; sourceTree = "<group>"; };
+		0C8C9E5923F7A3CA00FBCD4B /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		0C8C9E5D23F7BE1300FBCD4B /* ShowListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListViewModel.swift; sourceTree = "<group>"; };
+		0C8C9E5F23F7BE4E00FBCD4B /* DataBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBinding.swift; sourceTree = "<group>"; };
+		0CB6EF6623FAC4DC00E141EC /* ShowPokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPokemonTableViewCell.swift; sourceTree = "<group>"; };
+		0CB6EF6723FAC4DC00E141EC /* ShowPokemonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowPokemonTableViewCell.xib; sourceTree = "<group>"; };
+		0CB6EF6A23FAEA7300E141EC /* ShowDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailViewController.swift; sourceTree = "<group>"; };
+		0CB6EF6C23FAEE1600E141EC /* ShowDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailViewModel.swift; sourceTree = "<group>"; };
+		2C714197F5494EE6FB782D4D /* Pods-Nextzy_Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nextzy_Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Nextzy_Assignment/Pods-Nextzy_Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		64A795E89931E03F72A89BFE /* Pods_Nextzy_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nextzy_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC888C18802792BBD24F6F58 /* Pods-Nextzy_Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nextzy_Assignment.release.xcconfig"; path = "Target Support Files/Pods-Nextzy_Assignment/Pods-Nextzy_Assignment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658BFAE58A0B4E29356271F3 /* Pods_Nextzy_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +61,8 @@
 			children = (
 				0C8C9E3423F435F500FBCD4B /* Nextzy_Assignment */,
 				0C8C9E3323F435F500FBCD4B /* Products */,
+				C891416BB971E7F33D0187D5 /* Pods */,
+				2E4D11D0C14A78EC06AD13BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +77,71 @@
 		0C8C9E3423F435F500FBCD4B /* Nextzy_Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				0C8C9E5623F79E9200FBCD4B /* DataBinding */,
+				0C8C9E4B23F4417300FBCD4B /* ViewModels */,
+				0C8C9E4A23F4416900FBCD4B /* Views */,
+				0C8C9E4923F4415600FBCD4B /* Models */,
 				0C8C9E3523F435F500FBCD4B /* AppDelegate.swift */,
 				0C8C9E3723F435F500FBCD4B /* SceneDelegate.swift */,
-				0C8C9E3923F435F500FBCD4B /* ViewController.swift */,
 				0C8C9E3B23F435F500FBCD4B /* Main.storyboard */,
 				0C8C9E3E23F435F600FBCD4B /* Assets.xcassets */,
 				0C8C9E4023F435F600FBCD4B /* LaunchScreen.storyboard */,
 				0C8C9E4323F435F600FBCD4B /* Info.plist */,
 			);
 			path = Nextzy_Assignment;
+			sourceTree = "<group>";
+		};
+		0C8C9E4923F4415600FBCD4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C8C9E5923F7A3CA00FBCD4B /* PokemonModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0C8C9E4A23F4416900FBCD4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C8C9E5723F7A16F00FBCD4B /* ListPokemonViewController.swift */,
+				0CB6EF6623FAC4DC00E141EC /* ShowPokemonTableViewCell.swift */,
+				0CB6EF6723FAC4DC00E141EC /* ShowPokemonTableViewCell.xib */,
+				0CB6EF6A23FAEA7300E141EC /* ShowDetailViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0C8C9E4B23F4417300FBCD4B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0C8C9E5D23F7BE1300FBCD4B /* ShowListViewModel.swift */,
+				0CB6EF6C23FAEE1600E141EC /* ShowDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0C8C9E5623F79E9200FBCD4B /* DataBinding */ = {
+			isa = PBXGroup;
+			children = (
+				0C8C9E5F23F7BE4E00FBCD4B /* DataBinding.swift */,
+			);
+			path = DataBinding;
+			sourceTree = "<group>";
+		};
+		2E4D11D0C14A78EC06AD13BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64A795E89931E03F72A89BFE /* Pods_Nextzy_Assignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C891416BB971E7F33D0187D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C714197F5494EE6FB782D4D /* Pods-Nextzy_Assignment.debug.xcconfig */,
+				FC888C18802792BBD24F6F58 /* Pods-Nextzy_Assignment.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C8C9E4623F435F600FBCD4B /* Build configuration list for PBXNativeTarget "Nextzy_Assignment" */;
 			buildPhases = (
+				7B7EC86E3C1C2816B697435F /* [CP] Check Pods Manifest.lock */,
 				0C8C9E2E23F435F500FBCD4B /* Sources */,
 				0C8C9E2F23F435F500FBCD4B /* Frameworks */,
 				0C8C9E3023F435F500FBCD4B /* Resources */,
+				EED579AFE2DCE0624A8DA9F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,20 +206,69 @@
 			files = (
 				0C8C9E4223F435F600FBCD4B /* LaunchScreen.storyboard in Resources */,
 				0C8C9E3F23F435F600FBCD4B /* Assets.xcassets in Resources */,
+				0CB6EF6923FAC4DC00E141EC /* ShowPokemonTableViewCell.xib in Resources */,
 				0C8C9E3D23F435F500FBCD4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B7EC86E3C1C2816B697435F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nextzy_Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EED579AFE2DCE0624A8DA9F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nextzy_Assignment/Pods-Nextzy_Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nextzy_Assignment/Pods-Nextzy_Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nextzy_Assignment/Pods-Nextzy_Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0C8C9E2E23F435F500FBCD4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C8C9E3A23F435F500FBCD4B /* ViewController.swift in Sources */,
+				0CB6EF6D23FAEE1600E141EC /* ShowDetailViewModel.swift in Sources */,
 				0C8C9E3623F435F500FBCD4B /* AppDelegate.swift in Sources */,
+				0C8C9E6023F7BE4E00FBCD4B /* DataBinding.swift in Sources */,
+				0C8C9E5E23F7BE1300FBCD4B /* ShowListViewModel.swift in Sources */,
+				0C8C9E5823F7A16F00FBCD4B /* ListPokemonViewController.swift in Sources */,
+				0CB6EF6B23FAEA7300E141EC /* ShowDetailViewController.swift in Sources */,
+				0C8C9E5A23F7A3CA00FBCD4B /* PokemonModel.swift in Sources */,
 				0C8C9E3823F435F500FBCD4B /* SceneDelegate.swift in Sources */,
+				0CB6EF6823FAC4DC00E141EC /* ShowPokemonTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +410,7 @@
 		};
 		0C8C9E4723F435F600FBCD4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C714197F5494EE6FB782D4D /* Pods-Nextzy_Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +429,7 @@
 		};
 		0C8C9E4823F435F600FBCD4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC888C18802792BBD24F6F58 /* Pods-Nextzy_Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

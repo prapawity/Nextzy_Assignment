@@ -1,24 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7dU-JK-0e8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--PokeDek GO-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ListPokemonViewController" customModule="Nextzy_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="TYe-gQ-b7C">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="aHJ-bp-cxD"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="llG-Dv-aKB">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="loading" rowHeight="100" id="Yjb-NJ-Ws9">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yjb-NJ-Ws9" id="MCa-Cu-vM2">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="mig-Qd-iTQ">
+                                                    <rect key="frame" x="197" y="40" width="20" height="20"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mig-Qd-iTQ" firstAttribute="centerX" secondItem="MCa-Cu-vM2" secondAttribute="centerX" id="wj6-ny-5lE"/>
+                                                <constraint firstItem="mig-Qd-iTQ" firstAttribute="centerY" secondItem="MCa-Cu-vM2" secondAttribute="centerY" id="zak-rk-0Jf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemon-go-logo" id="oWd-3c-kyn">
+                                <rect key="frame" x="0.0" y="61" width="414" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="llG-Dv-aKB" secondAttribute="trailing" id="JXU-9x-5NT"/>
+                            <constraint firstItem="llG-Dv-aKB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tbk-HR-jeL"/>
+                            <constraint firstItem="TYe-gQ-b7C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bAR-jd-xDv"/>
+                            <constraint firstItem="llG-Dv-aKB" firstAttribute="top" secondItem="TYe-gQ-b7C" secondAttribute="bottom" id="d5f-F3-KQi"/>
+                            <constraint firstItem="TYe-gQ-b7C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kc3-dS-xyH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="llG-Dv-aKB" secondAttribute="bottom" id="rr8-Od-zTR"/>
+                            <constraint firstItem="TYe-gQ-b7C" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wOU-x8-IZK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="PokeDek GO" id="In3-cS-784"/>
+                    <connections>
+                        <outlet property="searchBar" destination="TYe-gQ-b7C" id="AG2-iR-y0e"/>
+                        <outlet property="showListPokemonTableView" destination="llG-Dv-aKB" id="PSr-wb-5xw"/>
+                        <segue destination="Isx-v3-EBo" kind="show" identifier="toShowDetail" id="SWi-q5-E20"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Show Detail View Controller-->
+        <scene sceneID="dwI-nb-Dty">
+            <objects>
+                <viewController id="Isx-v3-EBo" customClass="ShowDetailViewController" customModule="Nextzy_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lfa-m2-bxK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d4o49yb-f6ce0e46-18c7-4b95-8604-dfc301eb506b" translatesAutoresizingMaskIntoConstraints="NO" id="beM-uP-scx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemon-go-logo" translatesAutoresizingMaskIntoConstraints="NO" id="ek2-1D-XGT">
+                                <rect key="frame" x="20" y="108" width="374" height="199.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ek2-1D-XGT" secondAttribute="height" multiplier="15:8" id="5im-jC-aux"/>
+                                </constraints>
+                            </imageView>
+                            <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dpu-uq-fwe">
+                                <rect key="frame" x="30" y="357.5" width="354" height="474.5"/>
+                                <color key="backgroundColor" red="0.99661451580000004" green="0.40039092300000001" blue="0.4195854664" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krr-AX-2P9">
+                                <rect key="frame" x="30" y="357.5" width="354" height="474.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="PVo-Tj-rMI">
+                                        <rect key="frame" x="10" y="63" width="334" height="187.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3fS-rp-KGP">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="26"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID:" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngy-oC-sHS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="162" height="26"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gc-9n-bUY">
+                                                        <rect key="frame" x="172" y="0.0" width="162" height="26"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dLC-0H-Vcs">
+                                                <rect key="frame" x="0.0" y="68" width="334" height="51.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Base Experience:" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFL-b5-UJh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="162" height="51.5"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0d-3d-1pl">
+                                                        <rect key="frame" x="172" y="0.0" width="162" height="51.5"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="49Y-Cm-iZ4">
+                                                <rect key="frame" x="0.0" y="161.5" width="334" height="26"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvU-yw-btN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="162" height="26"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhQ-lg-4bi">
+                                                        <rect key="frame" x="172" y="0.0" width="162" height="26"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOZ-r1-Akx">
+                                        <rect key="frame" x="10" y="10" width="334" height="33"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kOZ-r1-Akx" firstAttribute="top" secondItem="krr-AX-2P9" secondAttribute="top" constant="10" id="AUH-5v-yx4"/>
+                                    <constraint firstItem="PVo-Tj-rMI" firstAttribute="leading" secondItem="krr-AX-2P9" secondAttribute="leading" constant="10" id="Fet-fu-Qp5"/>
+                                    <constraint firstItem="PVo-Tj-rMI" firstAttribute="top" secondItem="kOZ-r1-Akx" secondAttribute="bottom" constant="20" id="WCl-el-VVV"/>
+                                    <constraint firstAttribute="trailing" secondItem="kOZ-r1-Akx" secondAttribute="trailing" constant="10" id="mHt-u6-yYr"/>
+                                    <constraint firstAttribute="trailing" secondItem="PVo-Tj-rMI" secondAttribute="trailing" constant="10" id="tN7-xM-7tz"/>
+                                    <constraint firstItem="kOZ-r1-Akx" firstAttribute="leading" secondItem="krr-AX-2P9" secondAttribute="leading" constant="10" id="zSn-uj-ccP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8m7-Qh-971" firstAttribute="trailing" secondItem="ek2-1D-XGT" secondAttribute="trailing" constant="20" id="2H0-gK-9uL"/>
+                            <constraint firstItem="beM-uP-scx" firstAttribute="leading" secondItem="8m7-Qh-971" secondAttribute="leading" id="9B9-gJ-VrD"/>
+                            <constraint firstItem="beM-uP-scx" firstAttribute="top" secondItem="8m7-Qh-971" secondAttribute="top" id="9dc-Ir-pdm"/>
+                            <constraint firstItem="8m7-Qh-971" firstAttribute="trailing" secondItem="beM-uP-scx" secondAttribute="trailing" id="Ckr-nv-1Xg"/>
+                            <constraint firstItem="8m7-Qh-971" firstAttribute="trailing" secondItem="krr-AX-2P9" secondAttribute="trailing" constant="30" id="JYx-hR-aPg"/>
+                            <constraint firstItem="8m7-Qh-971" firstAttribute="trailing" secondItem="Dpu-uq-fwe" secondAttribute="trailing" constant="30" id="PpE-nq-FGj"/>
+                            <constraint firstItem="Dpu-uq-fwe" firstAttribute="leading" secondItem="8m7-Qh-971" secondAttribute="leading" constant="30" id="TND-RQ-scA"/>
+                            <constraint firstItem="ek2-1D-XGT" firstAttribute="top" secondItem="8m7-Qh-971" secondAttribute="top" constant="20" id="XcG-xY-5NH"/>
+                            <constraint firstItem="Dpu-uq-fwe" firstAttribute="top" secondItem="ek2-1D-XGT" secondAttribute="bottom" constant="50" id="bMI-JB-G0e"/>
+                            <constraint firstItem="ek2-1D-XGT" firstAttribute="leading" secondItem="8m7-Qh-971" secondAttribute="leading" constant="20" id="em5-g6-tpQ"/>
+                            <constraint firstItem="8m7-Qh-971" firstAttribute="bottom" secondItem="krr-AX-2P9" secondAttribute="bottom" constant="30" id="jXb-Wb-meQ"/>
+                            <constraint firstItem="krr-AX-2P9" firstAttribute="top" secondItem="ek2-1D-XGT" secondAttribute="bottom" constant="50" id="k03-kW-e3G"/>
+                            <constraint firstItem="krr-AX-2P9" firstAttribute="leading" secondItem="8m7-Qh-971" secondAttribute="leading" constant="30" id="ozj-42-vxH"/>
+                            <constraint firstItem="8m7-Qh-971" firstAttribute="bottom" secondItem="Dpu-uq-fwe" secondAttribute="bottom" constant="30" id="rw8-76-zA6"/>
+                            <constraint firstItem="8m7-Qh-971" firstAttribute="bottom" secondItem="beM-uP-scx" secondAttribute="bottom" id="vX6-HP-EkC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8m7-Qh-971"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rcB-qU-Hoe"/>
+                    <connections>
+                        <outlet property="exp" destination="k0d-3d-1pl" id="dlT-QZ-x0P"/>
+                        <outlet property="id" destination="1Gc-9n-bUY" id="IKB-Jg-Mml"/>
+                        <outlet property="img" destination="ek2-1D-XGT" id="S2P-hI-pFu"/>
+                        <outlet property="name" destination="kOZ-r1-Akx" id="A4O-B8-fRk"/>
+                        <outlet property="weight" destination="bhQ-lg-4bi" id="iSN-jm-rYE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vbj-ro-KN5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1847.826086956522" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Aix-If-co0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7dU-JK-0e8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vHY-4G-jGZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="212-Hh-5vg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zcs-aV-tUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="d4o49yb-f6ce0e46-18c7-4b95-8604-dfc301eb506b" width="1920" height="1080"/>
+        <image name="pokemon-go-logo" width="300" height="183"/>
+    </resources>
 </document>
